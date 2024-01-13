@@ -1,0 +1,707 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='HECHOS (homicidios)' inline='true' name='federated.0fs982f079s9bh1g9dvjf0o2ybf9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='homicidios' name='excel-direct.0qtddh41hhhqc91g21e3o08hqir3'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/anap/Documents/HENRY_LABSFT18/PI_DA/homicidios.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qtddh41hhhqc91g21e3o08hqir3' name='HECHOS' table='[HECHOS$]' type='table'>
+          <columns gridOrigin='A1:U697:no:A1:U697:0' header='yes' outcome='2'>
+            <column datatype='string' name='ID' ordinal='0' />
+            <column datatype='integer' name='N_VICTIMAS' ordinal='1' />
+            <column datatype='date' name='FECHA' ordinal='2' />
+            <column datatype='integer' name='AAAA' ordinal='3' />
+            <column datatype='integer' name='MM' ordinal='4' />
+            <column datatype='integer' name='DD' ordinal='5' />
+            <column datatype='string' name='HORA' ordinal='6' />
+            <column datatype='integer' name='HH' ordinal='7' />
+            <column datatype='string' name='LUGAR_DEL_HECHO' ordinal='8' />
+            <column datatype='string' name='TIPO_DE_CALLE' ordinal='9' />
+            <column datatype='string' name='Calle' ordinal='10' />
+            <column datatype='string' name='Altura' ordinal='11' />
+            <column datatype='string' name='Cruce' ordinal='12' />
+            <column datatype='string' name='Dirección Normalizada' ordinal='13' />
+            <column datatype='integer' name='COMUNA' ordinal='14' />
+            <column datatype='string' name='XY (CABA)' ordinal='15' />
+            <column datatype='string' name='pos x' ordinal='16' />
+            <column datatype='string' name='pos y' ordinal='17' />
+            <column datatype='string' name='PARTICIPANTES' ordinal='18' />
+            <column datatype='string' name='VICTIMA' ordinal='19' />
+            <column datatype='string' name='ACUSADO' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0qtddh41hhhqc91g21e3o08hqir3' name='HECHOS' table='[HECHOS$]' type='table'>
+          <columns gridOrigin='A1:U697:no:A1:U697:0' header='yes' outcome='2'>
+            <column datatype='string' name='ID' ordinal='0' />
+            <column datatype='integer' name='N_VICTIMAS' ordinal='1' />
+            <column datatype='date' name='FECHA' ordinal='2' />
+            <column datatype='integer' name='AAAA' ordinal='3' />
+            <column datatype='integer' name='MM' ordinal='4' />
+            <column datatype='integer' name='DD' ordinal='5' />
+            <column datatype='string' name='HORA' ordinal='6' />
+            <column datatype='integer' name='HH' ordinal='7' />
+            <column datatype='string' name='LUGAR_DEL_HECHO' ordinal='8' />
+            <column datatype='string' name='TIPO_DE_CALLE' ordinal='9' />
+            <column datatype='string' name='Calle' ordinal='10' />
+            <column datatype='string' name='Altura' ordinal='11' />
+            <column datatype='string' name='Cruce' ordinal='12' />
+            <column datatype='string' name='Dirección Normalizada' ordinal='13' />
+            <column datatype='integer' name='COMUNA' ordinal='14' />
+            <column datatype='string' name='XY (CABA)' ordinal='15' />
+            <column datatype='string' name='pos x' ordinal='16' />
+            <column datatype='string' name='pos y' ordinal='17' />
+            <column datatype='string' name='PARTICIPANTES' ordinal='18' />
+            <column datatype='string' name='VICTIMA' ordinal='19' />
+            <column datatype='string' name='ACUSADO' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:U697:no:A1:U697:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N_VICTIMAS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[N_VICTIMAS]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>N_VICTIMAS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FECHA</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[FECHA]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>FECHA</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AAAA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AAAA]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>AAAA</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MM]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>MM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DD]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>DD</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HORA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[HORA]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>HORA</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HH]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>HH</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LUGAR_DEL_HECHO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LUGAR_DEL_HECHO]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>LUGAR_DEL_HECHO</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TIPO_DE_CALLE</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TIPO_DE_CALLE]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>TIPO_DE_CALLE</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Calle]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>Calle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Altura</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Altura]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>Altura</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cruce</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cruce]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>Cruce</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dirección Normalizada</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Dirección Normalizada]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>Dirección Normalizada</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMUNA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COMUNA]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>COMUNA</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XY (CABA)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[XY (CABA)]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>XY (CABA)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pos x</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pos x]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>pos x</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pos y</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[pos y]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>pos y</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PARTICIPANTES</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PARTICIPANTES]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>PARTICIPANTES</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VICTIMA</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VICTIMA]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>VICTIMA</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACUSADO</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ACUSADO]</local-name>
+            <parent-name>[HECHOS]</parent-name>
+            <remote-alias>ACUSADO</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[HECHOS_80D517966E464A15870390945609BE5E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aaaa' datatype='integer' name='[AAAA]' role='measure' type='quantitative' />
+      <column caption='Acusado' datatype='string' name='[ACUSADO]' role='dimension' type='nominal' />
+      <column caption='Comuna' datatype='integer' name='[COMUNA]' role='measure' type='quantitative' />
+      <column caption='Fecha' datatype='date' name='[FECHA]' role='dimension' type='ordinal' />
+      <column caption='Hora' datatype='string' name='[HORA]' role='dimension' type='nominal' />
+      <column caption='Lugar Del Hecho' datatype='string' name='[LUGAR_DEL_HECHO]' role='dimension' type='nominal' />
+      <column caption='N Victimas' datatype='integer' name='[N_VICTIMAS]' role='measure' type='quantitative' />
+      <column caption='Participantes' datatype='string' name='[PARTICIPANTES]' role='dimension' type='nominal' />
+      <column caption='Tipo De Calle' datatype='string' name='[TIPO_DE_CALLE]' role='dimension' type='nominal' />
+      <column caption='Victima' datatype='string' name='[VICTIMA]' role='dimension' type='nominal' />
+      <column caption='Xy (Caba)' datatype='string' name='[XY (CABA)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='HECHOS' datatype='table' name='[__tableau_internal_object_id__].[HECHOS_80D517966E464A15870390945609BE5E]' role='measure' type='quantitative' />
+      <column caption='Pos X' datatype='string' name='[pos x]' role='dimension' type='nominal' />
+      <column caption='Pos Y' datatype='string' name='[pos y]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='HECHOS' id='HECHOS_80D517966E464A15870390945609BE5E'>
+            <properties context=''>
+              <relation connection='excel-direct.0qtddh41hhhqc91g21e3o08hqir3' name='HECHOS' table='[HECHOS$]' type='table'>
+                <columns gridOrigin='A1:U697:no:A1:U697:0' header='yes' outcome='2'>
+                  <column datatype='string' name='ID' ordinal='0' />
+                  <column datatype='integer' name='N_VICTIMAS' ordinal='1' />
+                  <column datatype='date' name='FECHA' ordinal='2' />
+                  <column datatype='integer' name='AAAA' ordinal='3' />
+                  <column datatype='integer' name='MM' ordinal='4' />
+                  <column datatype='integer' name='DD' ordinal='5' />
+                  <column datatype='string' name='HORA' ordinal='6' />
+                  <column datatype='integer' name='HH' ordinal='7' />
+                  <column datatype='string' name='LUGAR_DEL_HECHO' ordinal='8' />
+                  <column datatype='string' name='TIPO_DE_CALLE' ordinal='9' />
+                  <column datatype='string' name='Calle' ordinal='10' />
+                  <column datatype='string' name='Altura' ordinal='11' />
+                  <column datatype='string' name='Cruce' ordinal='12' />
+                  <column datatype='string' name='Dirección Normalizada' ordinal='13' />
+                  <column datatype='integer' name='COMUNA' ordinal='14' />
+                  <column datatype='string' name='XY (CABA)' ordinal='15' />
+                  <column datatype='string' name='pos x' ordinal='16' />
+                  <column datatype='string' name='pos y' ordinal='17' />
+                  <column datatype='string' name='PARTICIPANTES' ordinal='18' />
+                  <column datatype='string' name='VICTIMA' ordinal='19' />
+                  <column datatype='string' name='ACUSADO' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0BF46E78-16BC-44EB-8E43-937080CBC0E6}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HECHOS (homicidios)' name='federated.0fs982f079s9bh1g9dvjf0o2ybf9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fs982f079s9bh1g9dvjf0o2ybf9'>
+            <column caption='Comuna' datatype='integer' name='[COMUNA]' role='measure' type='quantitative' />
+            <column-instance column='[COMUNA]' derivation='Sum' name='[sum:COMUNA:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0fs982f079s9bh1g9dvjf0o2ybf9].[sum:COMUNA:qk]</cols>
+      </table>
+      <simple-id uuid='{A60CB4B3-C724-44CF-B64E-10C39F92D380}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{51A56FC3-03F0-4371-8087-350C0D4C9B1B}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fs982f079s9bh1g9dvjf0o2ybf9].[none:ACUSADO:nk]</field>
+            <field>[federated.0fs982f079s9bh1g9dvjf0o2ybf9].[none:LUGAR_DEL_HECHO:nk]</field>
+            <field>[federated.0fs982f079s9bh1g9dvjf0o2ybf9].[none:PARTICIPANTES:nk]</field>
+            <field>[federated.0fs982f079s9bh1g9dvjf0o2ybf9].[none:VICTIMA:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5C5C6B2A-FB88-4333-AA26-FF6937E225C2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='158' name='Sheet 2' width='384'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
