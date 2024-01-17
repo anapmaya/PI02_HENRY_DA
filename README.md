@@ -14,7 +14,7 @@ Desarrollado por Ana Paulina Maya Cohorte 18
 
 El desafío planteado para este proyecto consiste en asumir un rol de Data Analyst y llevar a cabo un análisis completo de los datos recibidos sobre la mortalidad en siniestros viales en la ciudad de Buenos Aires. Tendremos que analizar y presentar la información de tal manera que permita visualizar tendencias y tomar decisiones informadas sobre las medidas que pueden y deben adoptarse, a futuro, para la prevención de accidentes y la disminución en perdidas de vidas por esta causa.
 
-    El trabajo se compone, por un lado, de un Análisis Exploratorio de Datos en Python en el cual se busca conocer acerca de las características y evolución del sector en los últimos años; y se complementa con un Dashboard interactivo en Tableau, en el cual se incluyen ciertos indicadores claves de rendimiento del sector (KPI).
+El trabajo se compone, por un lado, de un Análisis Exploratorio de Datos en Python en el cual se busca conocer acerca de las características y evolución del sector en los últimos años; y se complementa con un Dashboard interactivo en Tableau, en el cual se incluyen ciertos indicadores claves de rendimiento del sector (KPI).
 
 # <h1 align=center>Análisis de siniestros viales en la Ciudad Autónoma de Buenos Aires, Argentina</h1>
 
@@ -82,3 +82,45 @@ Algunas conclusiones obtenidas de este analisis fueron:
 - Las comunas 1, 4 y 9 son en las que se han presentado más siniestos con desenalce fatal.
 
  Los análisis más detallados y filtrdos será más fácil realizarlos en el dashboard.
+
+#  <h3 align=left>Dashboard Interactivo en Tableau</h3> 
+
+#  <h3 align=left>Indicadores clave de Desempeño - KPIs</h3> 
+
+#  <h2 align=left>Indice de archivos del repositorio</h2> 
+#
+
+1. Carpeta Datasets: Contiene los datasets generados después del proceso de ETL, con los cuales se realizó el proceso de EDA, se llevaron a Tabelau para graficar y analizar y se calcularon los KPI's.
+    - [Dataset con el contenido limpio de la pestaña Hechos de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Hechos.csv)
+    - [Dataset con el contenido limpio de la pestaña Víctimas de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Victimas.csv)
+    - [Dataset con la información sobre población de Buenos aires en formato CSV](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Poblacion_CABA.csv)
+    - [Dataset con la información sobre población de Buenos aires en formato Excel](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Poblacion_CABA.xlsx)
+    - [Dataset con las columnas y los datos necesarios para el calculo del primer KPI](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/data_kpi01.csv)
+    - [Dataset con las columnas y los datos necesarios para el calculo del segundo KPI](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/data_kpi02.csv)
+    - [Dataset con el contenido de los dos anteriores combinados](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/homicidios_completo.csv)
+
+2. Carpeta Datos fuente: Contiene los archivos originales de los cuales se extrajo la información utilizada en el proyecto.
+    - [NOTAS_HOMICIDIOS_SINIESTRO_VIAL.pdf](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datos%20fuente/NOTAS_HOMICIDIOS_SINIESTRO_VIAL.pdf)
+    - [c2022_caba_est_c1_1.xlsx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datos%20fuente/c2022_caba_est_c1_1.xlsx)
+    - [c2022_caba_est_c2_1.xlsx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datos%20fuente/c2022_caba_est_c2_1.xlsx)
+    - [homicidios.xlsx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datos%20fuente/homicidios.xlsx)
+
+3. Carpeta Jupyter Notebooks
+    - [EDA.ipynb](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/jupyter%20notebooks/EDA.ipynb)
+    - [ETL.ipynb](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/jupyter%20notebooks/ETL.ipynb)
+
+4. Carpeta src: contiene imágenes usadas en el Readme y en el dashboard
+5. Carpeta raíz del repositorio:
+    - [README.md](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/README.md)
+
+
+#  <h2 align=left>Referencias</h2> 
+- [Observatorio de Movilidad y Seguridad Vial](https://buenosaires.gob.ar/movilidad/plan-de-seguridad-vial/observatorio-de-movilidad-y-seguridad-vial)
+- [Censo 2022 República Argentina](https://censo.gob.ar/index.php/datos_definitivos_caba/)
+- [Noticias ONU](https://news.un.org/es/story/2022/08/1523582)
+- [Organización Mundial de la Salud](https://www.who.int/es/news-room/fact-sheets/detail/road-traffic-injuries)
+- [Gestión de la velocidad vial en América Latina: el caso de la Argentina](https://repositorio.cepal.org/server/api/core/bitstreams/b03200f9-7df3-42ba-ac81-ef6dc8aeca9a/content)
+
+### Imágenes:
+- [Data Analytics](https://miro.medium.com/max/540/0*MNSJ0TDbgQZOPcdV.png)
+- [Accidente vial](https://360radio.com.co/wp-content/uploads/2021/11/accidente-vial-1536x1000.jpg)
