@@ -64,9 +64,13 @@ Estos los obtuve de [este enlace en la página web del Censo 2022 República Arg
 
  <h3 align=left>ETL</h3> 
 
+ #
+
 En primer lugar se tomó el archivo homicidios.xslx y se realizó un proceso de ETL, extrayendo y disponiendo la información contenida en ambas pestañas, en dataframes diferentes. Para cada dataframe se hizo un proceso de revisión y manejo de datos nulos, identificacion de duplicados, elección y unificación de tipos de datos, eliminación de algunas columnas. Se realizaron algunas transformaciones para intentar complementar los vacíos que existían y dejar toda la data en las mejores condiciones para ser analizada en el EDA y presentada en el Dashobard. Ambos dataframes se combinaron en uno completo, que fue exportado a formato CSV. El proceso completo y documentado se encuentra en el archivo [ETL](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/jupyter%20notebooks/ETL.ipynb), dentro de la carpeta [Jupyter Notebooks](https://github.com/anapmaya/PI02_HENRY_DA/tree/main/jupyter%20notebooks).
 
  <h3 align=left>EDA</h3> 
+
+ #
 
 A continuación se realizó un proceso de EDA, visualización y gráficas de relaciones entre variables para empezar a entender el comportamiento del fenómeno. Todo está documentado y comentado en el archivo [EDA](https://github.com/anapmaya/PI02_HENRY_DA/tree/main/jupyter%20notebooks), dentro de la carpeta [Jupyter Notebooks](https://github.com/anapmaya/PI02_HENRY_DA/tree/main/jupyter%20notebooks).
 
@@ -88,7 +92,6 @@ Algunas conclusiones obtenidas de este analisis fueron:
 #  <h3 align=left>Indicadores clave de Desempeño - KPIs</h3> 
 
 #  <h2 align=left>Indice de archivos del repositorio</h2> 
-#
 
 1. Carpeta Datasets: Contiene los datasets generados después del proceso de ETL, con los cuales se realizó el proceso de EDA, se llevaron a Tabelau para graficar y analizar y se calcularon los KPI's.
     - [Dataset con el contenido limpio de la pestaña Hechos de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Hechos.csv)
@@ -111,6 +114,7 @@ Algunas conclusiones obtenidas de este analisis fueron:
 
 4. Carpeta src: contiene imágenes usadas en el Readme y en el dashboard
 5. Carpeta raíz del repositorio:
+    - [Dashobard en Tableau](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/PI02_DA.twb)
     - [README.md](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/README.md)
 
 
