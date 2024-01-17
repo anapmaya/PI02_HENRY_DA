@@ -1,0 +1,1093 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1227.1336                               -->
+<workbook original-version='18.1' source-build='2023.3.1 (20233.23.1227.1336)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='homicidios_completo.csv+ (Multiple Connections)' inline='true' name='federated.1ew9yyc0eiuwtz1cf9hhd1q8d39o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='homicidios_completo' name='textscan.0vk2lk41ee7oaa1b21e651u1bxy6'>
+            <connection class='textscan' directory='/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets' filename='homicidios_completo.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='data_kpi01' name='textscan.0gfr78i0j7c8fg1guyjdn1dgx3ps'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets/data_kpi01.csv' dataRefreshTime='' directory='/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets' filename='/var/folders/5t/czpcbg3j23sf52vfg38zy6f00000gq/T/tableau-temp/00jn5ht0ymhtff10ewof60ud7owa/data_kpi01.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='data_kpi02' name='textscan.0k3l6be0zps93r1ee9pdx1k6p6zo'>
+            <connection class='textscan' directory='/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets' filename='data_kpi02.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Poblacion_CABA' name='textscan.0q9ojru0ncthaa1cinqs30w8t5kf'>
+            <connection class='textscan' directory='/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets' filename='Poblacion_CABA.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0q9ojru0ncthaa1cinqs30w8t5kf' name='Poblacion_CABA.csv' table='[Poblacion_CABA#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='integer' name='Comuna' ordinal='0' />
+            <column datatype='string' name='Población 2010' ordinal='1' />
+            <column datatype='string' name='Población 2022' ordinal='2' />
+            <column datatype='real' name='Variación absoluta' ordinal='3' />
+            <column datatype='string' name='Variación relativa (%)' ordinal='4' />
+            <column datatype='string' name='Aumento población/año' ordinal='5' />
+            <column datatype='string' name='Población 2016' ordinal='6' />
+            <column datatype='string' name='Población 2017' ordinal='7' />
+            <column datatype='string' name='Población 2018' ordinal='8' />
+            <column datatype='string' name='Población 2019' ordinal='9' />
+            <column datatype='string' name='Población 2020' ordinal='10' />
+            <column datatype='string' name='Población 2021' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0vk2lk41ee7oaa1b21e651u1bxy6' name='homicidios_completo.csv' table='[/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets/homicidios_completo#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='ID' ordinal='1' />
+              <column datatype='integer' name='Cantidad víctimas' ordinal='2' />
+              <column datatype='date' name='Fecha' ordinal='3' />
+              <column datatype='integer' name='Año' ordinal='4' />
+              <column datatype='integer' name='Mes' ordinal='5' />
+              <column datatype='integer' name='Día' ordinal='6' />
+              <column datatype='datetime' name='Hora' ordinal='7' />
+              <column datatype='integer' name='Hora entera' ordinal='8' />
+              <column datatype='string' name='Lugar del hecho' ordinal='9' />
+              <column datatype='string' name='Tipo de Calle' ordinal='10' />
+              <column datatype='string' name='Calle' ordinal='11' />
+              <column datatype='boolean' name='Cruce' ordinal='12' />
+              <column datatype='string' name='Dirección Normalizada' ordinal='13' />
+              <column datatype='integer' name='Comuna' ordinal='14' />
+              <column datatype='string' name='XY (CABA)' ordinal='15' />
+              <column datatype='real' name='Pos x' ordinal='16' />
+              <column datatype='real' name='Pos y' ordinal='17' />
+              <column datatype='string' name='Participantes' ordinal='18' />
+              <column datatype='string' name='Acusado' ordinal='19' />
+              <column datatype='string' name='Rol' ordinal='20' />
+              <column datatype='string' name='Víctima' ordinal='21' />
+              <column datatype='string' name='Sexo' ordinal='22' />
+              <column datatype='integer' name='EDAD' ordinal='23' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0q9ojru0ncthaa1cinqs30w8t5kf' name='Poblacion_CABA.csv' table='[Poblacion_CABA#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+              <column datatype='integer' name='Comuna' ordinal='0' />
+              <column datatype='string' name='Población 2010' ordinal='1' />
+              <column datatype='string' name='Población 2022' ordinal='2' />
+              <column datatype='real' name='Variación absoluta' ordinal='3' />
+              <column datatype='string' name='Variación relativa (%)' ordinal='4' />
+              <column datatype='string' name='Aumento población/año' ordinal='5' />
+              <column datatype='string' name='Población 2016' ordinal='6' />
+              <column datatype='string' name='Población 2017' ordinal='7' />
+              <column datatype='string' name='Población 2018' ordinal='8' />
+              <column datatype='string' name='Población 2019' ordinal='9' />
+              <column datatype='string' name='Población 2020' ordinal='10' />
+              <column datatype='string' name='Población 2021' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0k3l6be0zps93r1ee9pdx1k6p6zo' name='data_kpi01.csv' table='[data_kpi01#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='Año' ordinal='1' />
+              <column datatype='integer' name='Semestre' ordinal='2' />
+              <column datatype='integer' name='Cantidad víctimas' ordinal='3' />
+              <column datatype='real' name='Población Total' ordinal='4' />
+              <column datatype='real' name='Tasa semestral' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0k3l6be0zps93r1ee9pdx1k6p6zo' name='data_kpi02.csv' table='[data_kpi02#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='Año' ordinal='1' />
+              <column datatype='integer' name='Cantidad de víctimas' ordinal='2' />
+              <column datatype='real' name='Población Total' ordinal='3' />
+              <column datatype='integer' name='Víctimas año anterior' ordinal='4' />
+              <column datatype='string' name='Evolución' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Acusado]' value='[homicidios_completo.csv].[Acusado]' />
+          <map key='[Aumento población/año]' value='[Poblacion_CABA.csv].[Aumento población/año]' />
+          <map key='[Año (data_kpi01.csv)]' value='[data_kpi01.csv].[Año]' />
+          <map key='[Año (data_kpi02.csv)]' value='[data_kpi02.csv].[Año]' />
+          <map key='[Año]' value='[homicidios_completo.csv].[Año]' />
+          <map key='[Calle]' value='[homicidios_completo.csv].[Calle]' />
+          <map key='[Cantidad de víctimas]' value='[data_kpi02.csv].[Cantidad de víctimas]' />
+          <map key='[Cantidad víctimas (data_kpi01.csv)]' value='[data_kpi01.csv].[Cantidad víctimas]' />
+          <map key='[Cantidad víctimas]' value='[homicidios_completo.csv].[Cantidad víctimas]' />
+          <map key='[Comuna (Poblacion_CABA.csv)]' value='[Poblacion_CABA.csv].[Comuna]' />
+          <map key='[Comuna]' value='[homicidios_completo.csv].[Comuna]' />
+          <map key='[Cruce]' value='[homicidios_completo.csv].[Cruce]' />
+          <map key='[Dirección Normalizada]' value='[homicidios_completo.csv].[Dirección Normalizada]' />
+          <map key='[Día]' value='[homicidios_completo.csv].[Día]' />
+          <map key='[EDAD]' value='[homicidios_completo.csv].[EDAD]' />
+          <map key='[Evolución]' value='[data_kpi02.csv].[Evolución]' />
+          <map key='[F1 (data_kpi01.csv)]' value='[data_kpi01.csv].[F1]' />
+          <map key='[F1 (data_kpi02.csv)]' value='[data_kpi02.csv].[F1]' />
+          <map key='[F1]' value='[homicidios_completo.csv].[F1]' />
+          <map key='[Fecha]' value='[homicidios_completo.csv].[Fecha]' />
+          <map key='[Hora entera]' value='[homicidios_completo.csv].[Hora entera]' />
+          <map key='[Hora]' value='[homicidios_completo.csv].[Hora]' />
+          <map key='[ID]' value='[homicidios_completo.csv].[ID]' />
+          <map key='[Lugar del hecho]' value='[homicidios_completo.csv].[Lugar del hecho]' />
+          <map key='[Mes]' value='[homicidios_completo.csv].[Mes]' />
+          <map key='[Participantes]' value='[homicidios_completo.csv].[Participantes]' />
+          <map key='[Población 2010]' value='[Poblacion_CABA.csv].[Población 2010]' />
+          <map key='[Población 2016]' value='[Poblacion_CABA.csv].[Población 2016]' />
+          <map key='[Población 2017]' value='[Poblacion_CABA.csv].[Población 2017]' />
+          <map key='[Población 2018]' value='[Poblacion_CABA.csv].[Población 2018]' />
+          <map key='[Población 2019]' value='[Poblacion_CABA.csv].[Población 2019]' />
+          <map key='[Población 2020]' value='[Poblacion_CABA.csv].[Población 2020]' />
+          <map key='[Población 2021]' value='[Poblacion_CABA.csv].[Población 2021]' />
+          <map key='[Población 2022]' value='[Poblacion_CABA.csv].[Población 2022]' />
+          <map key='[Población Total (data_kpi02.csv)]' value='[data_kpi02.csv].[Población Total]' />
+          <map key='[Población Total]' value='[data_kpi01.csv].[Población Total]' />
+          <map key='[Pos x]' value='[homicidios_completo.csv].[Pos x]' />
+          <map key='[Pos y]' value='[homicidios_completo.csv].[Pos y]' />
+          <map key='[Rol]' value='[homicidios_completo.csv].[Rol]' />
+          <map key='[Semestre]' value='[data_kpi01.csv].[Semestre]' />
+          <map key='[Sexo]' value='[homicidios_completo.csv].[Sexo]' />
+          <map key='[Tasa semestral]' value='[data_kpi01.csv].[Tasa semestral]' />
+          <map key='[Tipo de Calle]' value='[homicidios_completo.csv].[Tipo de Calle]' />
+          <map key='[Variación absoluta]' value='[Poblacion_CABA.csv].[Variación absoluta]' />
+          <map key='[Variación relativa (%)]' value='[Poblacion_CABA.csv].[Variación relativa (%)]' />
+          <map key='[Víctima]' value='[homicidios_completo.csv].[Víctima]' />
+          <map key='[Víctimas año anterior]' value='[data_kpi02.csv].[Víctimas año anterior]' />
+          <map key='[XY (CABA)]' value='[homicidios_completo.csv].[XY (CABA)]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cantidad víctimas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cantidad víctimas]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Cantidad víctimas</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fecha</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Fecha]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Fecha</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Año</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Año]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Año</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mes]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Mes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Día</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Día]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Día</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Hora]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Hora</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hora entera</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hora entera]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Hora entera</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lugar del hecho</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Lugar del hecho]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Lugar del hecho</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo de Calle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo de Calle]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Tipo de Calle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Calle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Calle]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Calle</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cruce</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Cruce]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Cruce</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dirección Normalizada</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dirección Normalizada]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Dirección Normalizada</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comuna</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comuna]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Comuna</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XY (CABA)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[XY (CABA)]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>XY (CABA)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pos x]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Pos x</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pos y]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Pos y</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participantes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participantes]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Participantes</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acusado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acusado]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Acusado</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rol]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Rol</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Víctima</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Víctima]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Víctima</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sexo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sexo]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>Sexo</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EDAD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[EDAD]</local-name>
+            <parent-name>[homicidios_completo.csv]</parent-name>
+            <remote-alias>EDAD</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comuna</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comuna (Poblacion_CABA.csv)]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Comuna</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2010</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2010]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2010</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2022</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2022]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2022</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variación absoluta</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Variación absoluta]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Variación absoluta</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variación relativa (%)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variación relativa (%)]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Variación relativa (%)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aumento población/año</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aumento población/año]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Aumento población/año</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2016</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2016]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2016</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2017</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2017]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2017</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2018</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2018]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2018</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2019</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2019]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2019</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2020</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2020]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2020</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población 2021</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Población 2021]</local-name>
+            <parent-name>[Poblacion_CABA.csv]</parent-name>
+            <remote-alias>Población 2021</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (data_kpi01.csv)]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Año</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Año (data_kpi01.csv)]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>Año</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Semestre</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Semestre]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>Semestre</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cantidad víctimas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cantidad víctimas (data_kpi01.csv)]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>Cantidad víctimas</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Población Total]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>Población Total</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tasa semestral</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tasa semestral]</local-name>
+            <parent-name>[data_kpi01.csv]</parent-name>
+            <remote-alias>Tasa semestral</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (data_kpi02.csv)]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Año</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Año (data_kpi02.csv)]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>Año</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cantidad de víctimas</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cantidad de víctimas]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>Cantidad de víctimas</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Población Total</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Población Total (data_kpi02.csv)]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>Población Total</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Víctimas año anterior</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Víctimas año anterior]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>Víctimas año anterior</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Evolución</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Evolución]</local-name>
+            <parent-name>[data_kpi02.csv]</parent-name>
+            <remote-alias>Evolución</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Año (data kpi01.csv)' datatype='integer' name='[Año (data_kpi01.csv)]' role='measure' type='quantitative' />
+      <column caption='Año (data kpi02.csv)' datatype='integer' name='[Año (data_kpi02.csv)]' role='measure' type='quantitative' />
+      <column caption='Cantidad víctimas (data kpi01.csv)' datatype='integer' name='[Cantidad víctimas (data_kpi01.csv)]' role='measure' type='quantitative' />
+      <column caption='Comuna (Poblacion CABA.csv)' datatype='integer' name='[Comuna (Poblacion_CABA.csv)]' role='measure' type='quantitative' />
+      <column caption='Edad' datatype='integer' name='[EDAD]' role='measure' type='quantitative' />
+      <column caption='F1 (data kpi01.csv)' datatype='integer' name='[F1 (data_kpi01.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (data kpi02.csv)' datatype='integer' name='[F1 (data_kpi02.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column aggregation='Hour' datatype='datetime' name='[Hora]' role='dimension' type='ordinal' />
+      <column caption='Población Total (data kpi02.csv)' datatype='real' name='[Población Total (data_kpi02.csv)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Pos x]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Pos y]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Xy (Caba)' datatype='string' name='[XY (CABA)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Poblacion_CABA.csv' datatype='table' name='[__tableau_internal_object_id__].[Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_kpi01.csv' datatype='table' name='[__tableau_internal_object_id__].[data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_kpi02.csv' datatype='table' name='[__tableau_internal_object_id__].[data_kpi02.csv_E8C189F5050249E98A1964EC50396841]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='homicidios_completo.csv' datatype='table' name='[__tableau_internal_object_id__].[homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Poblacion_CABA.csv' id='Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0'>
+            <properties context=''>
+              <relation connection='textscan.0q9ojru0ncthaa1cinqs30w8t5kf' name='Poblacion_CABA.csv' table='[Poblacion_CABA#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+                  <column datatype='integer' name='Comuna' ordinal='0' />
+                  <column datatype='string' name='Población 2010' ordinal='1' />
+                  <column datatype='string' name='Población 2022' ordinal='2' />
+                  <column datatype='real' name='Variación absoluta' ordinal='3' />
+                  <column datatype='string' name='Variación relativa (%)' ordinal='4' />
+                  <column datatype='string' name='Aumento población/año' ordinal='5' />
+                  <column datatype='string' name='Población 2016' ordinal='6' />
+                  <column datatype='string' name='Población 2017' ordinal='7' />
+                  <column datatype='string' name='Población 2018' ordinal='8' />
+                  <column datatype='string' name='Población 2019' ordinal='9' />
+                  <column datatype='string' name='Población 2020' ordinal='10' />
+                  <column datatype='string' name='Población 2021' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='data_kpi01.csv' id='data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40'>
+            <properties context=''>
+              <relation connection='textscan.0k3l6be0zps93r1ee9pdx1k6p6zo' name='data_kpi01.csv' table='[data_kpi01#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Año' ordinal='1' />
+                  <column datatype='integer' name='Semestre' ordinal='2' />
+                  <column datatype='integer' name='Cantidad víctimas' ordinal='3' />
+                  <column datatype='real' name='Población Total' ordinal='4' />
+                  <column datatype='real' name='Tasa semestral' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='data_kpi02.csv' id='data_kpi02.csv_E8C189F5050249E98A1964EC50396841'>
+            <properties context=''>
+              <relation connection='textscan.0k3l6be0zps93r1ee9pdx1k6p6zo' name='data_kpi02.csv' table='[data_kpi02#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Año' ordinal='1' />
+                  <column datatype='integer' name='Cantidad de víctimas' ordinal='2' />
+                  <column datatype='real' name='Población Total' ordinal='3' />
+                  <column datatype='integer' name='Víctimas año anterior' ordinal='4' />
+                  <column datatype='string' name='Evolución' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='homicidios_completo.csv' id='homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066'>
+            <properties context=''>
+              <relation connection='textscan.0vk2lk41ee7oaa1b21e651u1bxy6' name='homicidios_completo.csv' table='[/Users/anap/Documents/HENRY_LABSFT18/PI02_HENRY_DA/datasets/homicidios_completo#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='ID' ordinal='1' />
+                  <column datatype='integer' name='Cantidad víctimas' ordinal='2' />
+                  <column datatype='date' name='Fecha' ordinal='3' />
+                  <column datatype='integer' name='Año' ordinal='4' />
+                  <column datatype='integer' name='Mes' ordinal='5' />
+                  <column datatype='integer' name='Día' ordinal='6' />
+                  <column datatype='datetime' name='Hora' ordinal='7' />
+                  <column datatype='integer' name='Hora entera' ordinal='8' />
+                  <column datatype='string' name='Lugar del hecho' ordinal='9' />
+                  <column datatype='string' name='Tipo de Calle' ordinal='10' />
+                  <column datatype='string' name='Calle' ordinal='11' />
+                  <column datatype='boolean' name='Cruce' ordinal='12' />
+                  <column datatype='string' name='Dirección Normalizada' ordinal='13' />
+                  <column datatype='integer' name='Comuna' ordinal='14' />
+                  <column datatype='string' name='XY (CABA)' ordinal='15' />
+                  <column datatype='real' name='Pos x' ordinal='16' />
+                  <column datatype='real' name='Pos y' ordinal='17' />
+                  <column datatype='string' name='Participantes' ordinal='18' />
+                  <column datatype='string' name='Acusado' ordinal='19' />
+                  <column datatype='string' name='Rol' ordinal='20' />
+                  <column datatype='string' name='Víctima' ordinal='21' />
+                  <column datatype='string' name='Sexo' ordinal='22' />
+                  <column datatype='integer' name='EDAD' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Comuna]' />
+              <expression op='[Comuna (Poblacion_CABA.csv)]' />
+            </expression>
+            <first-end-point object-id='homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066' />
+            <second-end-point object-id='Poblacion_CABA.csv_6142F0D9F9484335809C65345C4DB4E0' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Año]' />
+              <expression op='[Año (data_kpi01.csv)]' />
+            </expression>
+            <first-end-point object-id='homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066' />
+            <second-end-point object-id='data_kpi01.csv_E9799859079243D594DD65BF0AFA3A40' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Año]' />
+              <expression op='[Año (data_kpi02.csv)]' />
+            </expression>
+            <first-end-point object-id='homicidios_completo.csv_0942484EBA5146E68DF27E77CE0E7066' />
+            <second-end-point object-id='data_kpi02.csv_E8C189F5050249E98A1964EC50396841' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FDBAFB7C-5739-475C-8455-2568132A06F8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6BBDFA73-D2CC-4D0E-8112-4B84725222F6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
