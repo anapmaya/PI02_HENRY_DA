@@ -14,7 +14,7 @@ Desarrollado por Ana Paulina Maya Cohorte 18
 
 El desafío planteado para este proyecto consiste en asumir un rol de Data Analyst y llevar a cabo un análisis completo de los datos recibidos sobre la mortalidad en siniestros viales en la ciudad de Buenos Aires. Tendremos que analizar y presentar la información de tal manera que permita visualizar tendencias y tomar decisiones informadas sobre las medidas que pueden y deben adoptarse, a futuro, para la prevención de accidentes y la disminución en perdidas de vidas por esta causa.
 
-El trabajo se compone, por un lado, de un Análisis Exploratorio de Datos en Python en el cual se busca conocer acerca de las características y evolución del sector en los últimos años; y se complementa con un Dashboard interactivo en Tableau, en el cual se incluyen ciertos indicadores claves de rendimiento del sector (KPI).
+El trabajo se compone, por un lado, de un Análisis Exploratorio de Datos en Python en el cual se busca conocer acerca de las características y evolución de la problemática en los últimos años y se complementa con un Dashboard interactivo en Tableau, en el cual se incluyen ciertos indicadores claves de rendimiento (KPI).
 
 # <h1 align=center>Análisis de siniestros viales en la Ciudad Autónoma de Buenos Aires, Argentina</h1>
 
@@ -24,11 +24,11 @@ El trabajo se compone, por un lado, de un Análisis Exploratorio de Datos en Pyt
 
  <h2 align=left>Contexto</h2>
 
-Los países de América Latina registran casi el doble de accidentes en carretera que los europeos. Según datos recientes de la ONU, los países de la región registraron 17 muertes por cada 100.000 habitantes por este motivo, casi dos veces más que el promedio europeo de nueve personas, además son una de las principales causas de mortalidad infantil y juvenil. Agunos datos que dan muestra de esto son:
+Los países de América Latina registran casi el doble de accidentes de tránsito que los europeos. Según datos recientes de la ONU, los países de la región registraron 17 muertes por cada 100.000 habitantes por este motivo, casi dos veces más que el promedio europeo de nueve personas, además son una de las principales causas de mortalidad infantil y juvenil. Agunos datos que dan muestra de esto son:
 - Cada año, las colisiones causadas por el tránsito se cobran la vida de aproximadamente 1,19 millones de personas.
 - Según el Banco Mundial, los peatones representan casi el 50% de las víctimas mortales en las carreteras de El Salvador.
 - En 2022, los accidentes de tráfico fueron la segunda causa de muertes violentas en Honduras.
-- En Brasil, los conductores de vehículos motorizados de dos y tres ruedas son los que corren más riesgos en las carreteras del país.
+- En Brasil, los conductores de vehículos motorizados de dos y tres ruedas son los que corren más riesgos en las vías del país.
 - Según el Banco Mundial, los accidentes de tráfico son la principal causa de muerte entre las personas de cinco a 29 años en Paraguay, y las lesiones causadas por éstos han aumentado en los últimos cinco años.
 - Los usuarios vulnerables de las vías, como los peatones y ciclistas, son los que corren mayor riesgo, y junto con los motociclistas representan más de la mitad de las muertes en las redes viales del mundo cada año.
 
@@ -46,16 +46,16 @@ Argentina no es un país ajeno a esta problemática, en el período 2000-2019, l
 
 El Observatorio de Movilidad y Seguridad Vial (OMSV), centro de estudios que se encuentra bajo la órbita de la Secretaría de Transporte del Gobierno de la Ciudad Autónoma de Buenos Aires, es un centro de estudios de alta eficiencia y nivel técnico que fue creado con el objetivo de sistematizar y analizar información para comprender la situación actual en materia de seguridad vial en la Ciudad. Desde 2020 se amplió su campo de acción, incluyendo la elaboración de informes y reportes relativos a la Movilidad en la Ciudad.
 
-El OMSV nos solicita la elaboración de un proyecto de anális de datos, con el fin de generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Para ello, nos disponibilizan un dataset sobre homicidios en siniestros viales acaecidos en la Ciudad de Buenos Aires durante el periodo 2016-2021.
+El OMSV nos solicita la elaboración de un proyecto de anális de datos, con el fin de generar información que le permita a las autoridades locales tomar medidas para disminuir la cantidad de víctimas fatales de los siniestros viales. Para ello, ponen a nuestra disposición un dataset sobre homicidios en siniestros viales acaecidos en la Ciudad de Buenos Aires durante el periodo 2016-2021.
 
  <h2 align=left>Datos</h2>
 
 Se nos pide trabajar con una base de datos que contiene información de Víctimas Fatales en Siniestros Viales y que se encuentra en formato de Excel (Homicidios.xslx). El archivo contiene dos pestañas de datos:
 
 - HECHOS: que contiene una fila por cada accidente (hecho) con id único y las variables temporales, espaciales y participantes asociadas al mismo.
-- VICTIMAS: contiene una fila por cada víctima de los hechos y las variables edad, sexo y modo de desplazamiento asociadas a cada víctima.
+- VICTIMAS: contiene una fila por cada víctima de los hechos y las variables edad, sexo, rol y modo de desplazamiento asociadas a cada víctima.
 
-En el documento se encuentran otras dos pestañan en las que se detallan todas las definiciones manejadas en los datos y en el desarrollo de este proyecto. La base de datos fue descargada de [este enlace](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales) y además puede encontrarse en este repositorio, en la carpeta [Datos Fuente](https://github.com/anapmaya/PI02_HENRY_DA/tree/main/datos%20fuente)
+En el documento se encuentran otras dos pestañas en las que se detallan todas las definiciones manejadas en los datos y en el desarrollo de este proyecto. La base de datos fue descargada de [este enlace](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales) y además puede encontrarse en este repositorio, en la carpeta [Datos Fuente](https://github.com/anapmaya/PI02_HENRY_DA/tree/main/datos%20fuente)
 
 Además, para cumplir con los KPI's solicitados, eran necesario conocer la población de la Ciudad de Buenos Aires en los años para los cuales existen datos en la base de datos (2016 - 2021).
 Estos los obtuve de [este enlace en la página web del Censo 2022 República Argentina](https://censo.gob.ar/wp-content/uploads/2023/11/c2022_caba_est_c1_1.xlsx)
@@ -78,14 +78,14 @@ Se realizaron observaciones según las dimensiones demográficas (edad, sexo), e
 
 Algunas conclusiones obtenidas de este analisis fueron:
 - Entre los años 2016, 2017 y 2018, las variaciones entre la cantidad de víctimas no fueron muy representativas, sin embargo se presentaron disminuciones importantes en los años 2019 y 2020. Desafortunadamete estas vuelven a aumentar en el 2021.
-- Una tendencia que se ve presente en todos los años es la marcada diferencia entre la cantidad de mujeres y hombres que mueren en accidentes viales, siende esto siempre mayoría.
+- Una tendencia que se ve presente en todos los años es la marcada diferencia entre la cantidad de mujeres y hombres que mueren en accidentes viales, siende ellos siempre mayoría.
 - Los picos de mayor cantidad de muertes a lo largo del año varían cuando analizamos año a año, lo que no nos permite establecer un patrón o afirmar que existe uno o varios meses en el año en los que constantemente se dan más accidentes viales con resultados fatales.
 - Quienes se encuentran más vulnerables en este tipo de accidente son los peatones y los motociclistas.
 - El momento del día en qué más accidentes fatales se presentan es entre las 5 y las 7AM.
-- La mayor peligrosidad de las avenidas queda de manifiesto al comparar cantidades de vícitmas según el típo de vía en que ocurrió el accidente.
+- La mayor peligrosidad de las avenidas queda de manifiesto al comparar cantidades de vícitmas según el típo de vía en la que ocurrió el accidente.
 - Las comunas 1, 4 y 9 son en las que se han presentado más siniestos con desenalce fatal.
 
- Los análisis más detallados y filtrdos será más fácil realizarlos en el dashboard.
+ Los análisis más detallados y filtrados será más fácil realizarlos en el dashboard.
 
 #  <h3 align=left>Dashboard Interactivo en Tableau</h3> 
 
@@ -93,14 +93,15 @@ Algunas conclusiones obtenidas de este analisis fueron:
 
 #  <h2 align=left>Indice de archivos del repositorio</h2> 
 
-1. Carpeta Datasets: Contiene los datasets generados después del proceso de ETL, con los cuales se realizó el proceso de EDA, se llevaron a Tabelau para graficar y analizar y se calcularon los KPI's.
+1. Carpeta Datasets: Contiene los datasets generados después del proceso de ETL, con los cuales se realizó el proceso de EDA, se llevaron a Tableau para graficar y analizar y se calcularon los KPI's.
     - [Dataset con el contenido limpio de la pestaña Hechos de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Hechos.csv)
     - [Dataset con el contenido limpio de la pestaña Víctimas de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Victimas.csv)
+    - [Dataset con el contenido de los dos anteriores combinados](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/homicidios_completo.csv)
     - [Dataset con la información sobre población de Buenos aires en formato CSV](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Poblacion_CABA.csv)
     - [Dataset con la información sobre población de Buenos aires en formato Excel](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Poblacion_CABA.xlsx)
     - [Dataset con las columnas y los datos necesarios para el calculo del primer KPI](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/data_kpi01.csv)
     - [Dataset con las columnas y los datos necesarios para el calculo del segundo KPI](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/data_kpi02.csv)
-    - [Dataset con el contenido de los dos anteriores combinados](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/homicidios_completo.csv)
+
 
 2. Carpeta Datos fuente: Contiene los archivos originales de los cuales se extrajo la información utilizada en el proyecto.
     - [NOTAS_HOMICIDIOS_SINIESTRO_VIAL.pdf](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datos%20fuente/NOTAS_HOMICIDIOS_SINIESTRO_VIAL.pdf)
