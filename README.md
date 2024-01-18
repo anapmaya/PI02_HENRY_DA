@@ -89,9 +89,36 @@ Algunas conclusiones obtenidas de este analisis fueron:
 
 #  <h3 align=left>Dashboard Interactivo en Tableau</h3> 
 
-#  <h3 align=left>Indicadores clave de Desempeño - KPIs</h3> 
+Una vez logrado el entendimiento acerca de los datos con los que disponíamos, se procedió al desarrollo de un Dashboard o Tablero de Control en Tableau, el cual  incluye diferentes gráficos y visualizaciones que permiten obtener, en un vistazo, una idea general acerca del comportamiento y distribución de los hechos analizados.
 
-#  <h2 align=left>Indice de archivos del repositorio</h2> 
+Se organiza en 4 páginas o tableros:
+
+#### 1. Portada
+#### 2. Mediciones contrastadas según parámetros demográficos y temporales
+
+<p align="center">
+  <img src="src/temporales.png">
+</p>
+
+En esta página revisamos distribución de víctimas según sexo, edad, años, meses y días. De manera interactiva podemos observar diferentes relaciones entre las variables mencionadas
+
+#### 3. Mediciones contrastadas según parámetros espaciales, tipo de vehículo y rol de las víctimas
+
+<p align="center">
+  <img src="src/espaciales.png">
+</p>
+
+En esta página revisamos distribución de víctimas según comuna y tipo de vía, también según el rol que desempeñaron en el accidente y el vehículo o medio de transporte. De manera interactiva podemos observar diferentes relaciones entre las variables mencionadas.
+
+#### 4. KPI's
+
+<p align="center">
+  <img src="src/KPIs.png">
+</p>
+
+Se pueden ver graficados las métricas solicitados para cada período analizado, y la proyección y evolución tanto de la tasa de homicidios en siniestros viales como del porcentaje de accidentes de motociclistas para los dos úlitmos períodos de los datos analizados.
+
+ <h2 align=left>Indice de archivos del repositorio</h2> 
 
 1. Carpeta Datasets: Contiene los datasets generados después del proceso de ETL, con los cuales se realizó el proceso de EDA, se llevaron a Tableau para graficar y analizar y se calcularon los KPI's.
     - [Dataset con el contenido limpio de la pestaña Hechos de homicidios.xslx](https://github.com/anapmaya/PI02_HENRY_DA/blob/main/datasets/Homicidios_Hechos.csv)
